@@ -1,0 +1,117 @@
+@media (min-width: 320px) {
+  .contacto {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-areas:
+      "title"
+      "form"
+      "info";
+    gap: 1rem;
+    .secondaryTitle {
+      grid-area: title;
+    }
+    .contactoInfo {
+      grid-area: info;
+      display: flex;
+      flex-direction: column;
+      width: 18rem;
+      gap: 1rem;
+      .contactoInfoData {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+      }
+    }
+    .contactoInfoRedes {
+      display: none;
+      a {
+        color: $red;
+      }
+    }
+    .contactoFormularioContainer {
+      grid-area: form;
+      width: 18rem;
+      .contactoBotonContainer {
+        margin-bottom: 1.5rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 500px) {
+  .contacto {
+    .contactoInfo {
+      width: 27rem;
+      .contactoInfoData {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+      }
+    }
+    .contactoFormularioContainer {
+      width: 27rem;
+      .contactoBotonContainer {
+        display: flex;
+        flex-direction: row;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .contacto {
+    grid-template-areas:
+      "title form"
+      "info form"
+      "auto form";
+    gap: 2rem;
+    .secondaryTitle {
+      text-align: start;
+      margin-bottom: 1rem;
+    }
+    .contactoInfo {
+      width: 20rem;
+      gap: 2rem;
+      .contactoInfoData {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+      }
+      .contactoInfoRedes {
+        display: flex;
+        gap: 1rem;
+      }
+    }
+    .contactoFormularioContainer {
+      width: 20rem;
+      .contactoBotonContainer {
+        margin-bottom: 0rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .contacto {
+    .contactoInfo {
+      width: 27rem;
+      gap: 2rem;
+      .contactoInfoData {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+      }
+      .contactoInfoRedes {
+        display: flex;
+        gap: 1rem;
+      }
+    }
+    .contactoFormularioContainer {
+      width: 27rem;
+    }
+  }
+}

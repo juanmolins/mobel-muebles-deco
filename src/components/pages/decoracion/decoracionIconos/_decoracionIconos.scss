@@ -1,0 +1,41 @@
+@media (min-width: 320px) {
+  .decoracionIconosContainer {
+    width: 18rem;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    img {
+      width: 4rem;
+    }
+  }
+}
+
+@media (min-width: 500px) {
+  .decoracionIconosContainer {
+    width: 27rem;
+
+    img {
+      width: 6rem;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .decoracionIconosContainer {
+    width: 38rem;
+
+    img {
+      width: 7rem;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .decoracionIconosContainer {
+    width: 50rem;
+
+    img {
+      width: 8rem;
+    }
+  }
+}

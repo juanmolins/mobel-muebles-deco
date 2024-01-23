@@ -1,0 +1,100 @@
+@mixin asiTrabajamoscard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0px 0px 12px -1px rgba(0, 0, 0, 0.28);
+  -webkit-box-shadow: 0px 0px 12px -1px rgba(0, 0, 0, 0.28);
+  -moz-box-shadow: 0px 0px 12px -1px rgba(0, 0, 0, 0.28);
+  h3 {
+    color: $darkGrey;
+    margin: 1rem 0 1rem 0;
+  }
+}
+
+@media (min-width: 320px) {
+  .homeAsiTrabajamos {
+    margin-top: 3rem;
+    .homeAsiTrabajamosCarousel {
+      width: 100vw;
+      .slick-prev:before,
+      .slick-next:before {
+        color: $red;
+      }
+      .slick-slide {
+        display: flex;
+        justify-content: center;
+      }
+      .homeAsiTrabajamosCard {
+        @include asiTrabajamoscard;
+        width: 65vw;
+        height: 12rem;
+        img {
+          width: 2rem;
+        }
+      }
+    }
+    .homeAsiTrabajamosTarjetas {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 410px) {
+  .homeAsiTrabajamos {
+    .homeAsiTrabajamosCarousel {
+      .homeAsiTrabajamosCard {
+        width: 70vw;
+      }
+    }
+  }
+}
+
+@media (min-width: 500px) {
+  .homeAsiTrabajamos {
+    .homeAsiTrabajamosCarousel {
+      .homeAsiTrabajamosCard {
+        width: 22rem;
+        img {
+          width: 3rem;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .homeAsiTrabajamos {
+    .secondaryTitle {
+      text-align: start;
+    }
+    .homeAsiTrabajamosCarousel {
+      display: none;
+    }
+    .homeAsiTrabajamosTarjetas {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 1rem;
+      .homeAsiTrabajamosCard {
+        @include asiTrabajamoscard;
+        width: 14rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .homeAsiTrabajamos {
+    .homeAsiTrabajamosTarjetas {
+      .homeAsiTrabajamosCard {
+        width: 20rem;
+      }
+    }
+  }
+}

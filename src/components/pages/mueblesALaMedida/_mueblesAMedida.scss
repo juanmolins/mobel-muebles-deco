@@ -1,0 +1,9 @@
+@import "./MueblesAMedidaHeader/mueblesAMedidaHeader";
+@import "./mueblesALaMedidaIconos/mueblesALaMedidaIconos";
+@import "./mueblesAMedidaArticle/mueblesAMedidaArticle";
+
+.mueblesAMedida {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

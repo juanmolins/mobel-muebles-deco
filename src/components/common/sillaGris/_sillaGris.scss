@@ -1,0 +1,62 @@
+@media (min-width: 320px) {
+  .sillaGris {
+    background: linear-gradient(
+      0deg,
+      rgba(198, 0, 0, 1) 70%,
+      rgba(255, 255, 255, 0) 57%
+    );
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 1rem;
+    margin-top: 2rem;
+    .sillaGrisTextoContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 17rem;
+      .sillaGrisTextoTitle {
+        font-size: 18px;
+        margin: 1rem 0 1rem 0;
+      }
+      p {
+        color: white;
+        margin-bottom: 1rem;
+        width: 17rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .sillaGris {
+    flex-direction: row;
+    justify-content: center;
+    padding-left: 3rem;
+    .sillaGrisTextoContainer {
+      width: 30rem;
+      margin-top: 4rem;
+      .sillaGrisTextoTitle {
+        font-size: 26px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .sillaGris {
+    gap: 6rem;
+    padding-left: 2rem;
+    .sillaGrisTextoContainer {
+      .sillaGrisTextoTitle {
+        font-size: 30px;
+      }
+      p {
+        width: 22rem;
+      }
+    }
+  }
+}

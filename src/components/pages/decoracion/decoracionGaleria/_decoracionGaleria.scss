@@ -1,0 +1,90 @@
+@media (min-width: 320px) {
+  .decoracionGaleria {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+    .decoracionGaleriaTextContainer {
+      width: 17rem;
+      margin-bottom: 2rem;
+      .decoracionGaleriaText {
+        text-align: justify;
+      }
+    }
+    .decoracionGaleriaImgContainer {
+      display: none;
+    }
+    .decoracionGaleriaCarouselContainer {
+      margin-bottom: 2rem;
+      .decoracionGaleriaCarousel {
+        .slick-slide {
+          display: flex;
+          justify-content: center;
+        }
+        .slick-prev {
+          z-index: 1;
+          left: 20px;
+        }
+        .slick-next {
+          z-index: 1;
+          right: 32px;
+        }
+        .slick-prev:before,
+        .slick-next:before {
+          color: $red;
+        }
+        width: 100vw;
+        div {
+          height: 18rem;
+
+          img {
+            height: 18rem;
+            border-radius: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 500px) {
+  .decoracionGaleria {
+    .decoracionGaleriaTextContainer {
+      width: 25rem;
+    }
+    .decoracionGaleriaImgContainer {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 1rem;
+      img {
+        width: 15rem;
+        padding: 1rem;
+        border-radius: 2rem;
+      }
+    }
+    .decoracionGaleriaCarouselContainer {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .decoracionGaleria {
+    .decoracionGaleriaTextContainer {
+      width: 40rem;
+      .decoracionGaleriaText {
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .decoracionGaleria {
+    .decoracionGaleriaImgContainer {
+      width: 65rem;
+    }
+  }
+}

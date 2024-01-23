@@ -1,0 +1,56 @@
+@media (min-width: 320px) {
+  .navbarDesktop {
+    display: none;
+  }
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    width: 100vw;
+    div {
+      img {
+        width: 7rem;
+      }
+    }
+    .navbarMenu {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      li {
+        padding: 1rem 1.5rem 1rem 1.5rem;
+        font-size: 15px;
+        font-weight: 600;
+        list-style-type: none;
+        color: $darkGrey;
+        .navbarMenuLink {
+          padding: 0;
+          margin: 0;
+        }
+        &:hover {
+          color: $red;
+          text-decoration: underline;
+          text-decoration-thickness: 0.15rem;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .navbarDesktop {
+    display: flex;
+  }
+  .navbarMobile {
+    display: none;
+  }
+  nav {
+    width: 75rem;
+    div {
+      img {
+        width: 9rem;
+      }
+    }
+  }
+}

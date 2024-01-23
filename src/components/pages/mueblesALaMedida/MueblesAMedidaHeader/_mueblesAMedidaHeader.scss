@@ -1,0 +1,59 @@
+@media (min-width: 320px) {
+  .mueblesAMedidaHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    background-image: url("https://res.cloudinary.com/drez01kou/image/upload/v1705505462/mobel-deco/baners/ogop4atf00ez7dw2domy.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 16rem;
+    width: 100vw;
+    box-shadow: 0px -150px 101px -2px rgba(255, 255, 255, 1) inset;
+    -webkit-box-shadow: 0px -150px 101px -2px rgba(255, 255, 255, 1) inset;
+    -moz-box-shadow: 0px -150px 101px -2px rgba(255, 255, 255, 1) inset;
+    .mueblesAMedidaHeaderTitleContainer {
+      opacity: 100%;
+      .secondaryTitle {
+        color: $darkGrey;
+      }
+    }
+    .mueblesAMedidaHeaderRuta {
+      display: none;
+    }
+  }
+}
+@media (min-width: 500px) {
+  .mueblesAMedidaHeader {
+    height: 18rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .mueblesAMedidaHeader {
+    height: 22rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .mueblesAMedidaHeader {
+    height: 28rem;
+    .mueblesAMedidaHeaderRuta {
+      display: flex;
+      justify-content: flex-start;
+      width: 100vw;
+      .mueblesAMedidaHeaderRutaNavegacion {
+        width: 100%;
+        display: inline-flex;
+        justify-content: start;
+        padding-left: 6.25rem;
+        font-size: 20px;
+        color: $darkGrey;
+      }
+      p {
+        padding-left: 5px;
+        font-size: 20px;
+      }
+    }
+  }
+}

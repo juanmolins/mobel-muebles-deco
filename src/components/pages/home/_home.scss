@@ -1,0 +1,13 @@
+@import "./homeCarousel/homeCarousel";
+@import "./homeAcercaDe/homeAcercaDe";
+@import "./homeAsiTrabajamos/homeAsiTrabajamos";
+@import "./homeProveedores/homeProveedores.scss";
+@import "./homeProyectos/homeProyectos";
+@import "./homeComentarios/homeComentarios";
+@import "./homeDudasFrecuentes/homeDudasFrecuentes";
+
+.homeContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

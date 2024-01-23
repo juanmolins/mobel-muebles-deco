@@ -1,0 +1,116 @@
+@media (min-width: 320px) {
+  .homeProyectos {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    header {
+      width: 15rem;
+    }
+    .homeProyectosCarouselContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .slick-slide {
+        display: flex;
+        justify-content: center;
+      }
+      .homeProyectosCarousel {
+        .slick-prev {
+          z-index: 1;
+          left: 10px;
+        }
+        .slick-next {
+          z-index: 1;
+          right: 22px;
+        }
+        .slick-prev:before,
+        .slick-next:before {
+          font-size: 30px;
+          line-height: 1;
+          opacity: 0.85;
+          color: white;
+        }
+        width: 100vw;
+        div {
+          height: 18rem;
+          width: 100vw;
+          background-position: center;
+          background-size: cover;
+          overflow: hidden;
+
+          position: relative;
+          img {
+            position: absolute;
+            left: -100%;
+            right: -100%;
+            top: -100%;
+            bottom: -100%;
+            margin: auto;
+            height: 19rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 500px) {
+  .homeProyectos {
+    header {
+      width: 20rem;
+    }
+    .homeProyectosCarouselContainer {
+      .homeProyectosCarousel {
+        div {
+          height: 29rem;
+          img {
+            height: 29rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .homeProyectos {
+    header {
+      width: 25rem;
+    }
+    .homeProyectosCarouselContainer {
+      .homeProyectosCarousel {
+        width: 45rem;
+        div {
+          width: 45rem;
+          height: 27rem;
+          border-radius: 15px;
+          img {
+            width: 45rem;
+            height: 27rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .homeProyectos {
+    .homeProyectosCarouselContainer {
+      .homeProyectosCarousel {
+        width: 62rem;
+        div {
+          width: 62rem;
+          height: 35rem;
+          border-radius: 15px;
+          img {
+            height: 35rem;
+            width: 62rem;
+          }
+        }
+      }
+    }
+  }
+}

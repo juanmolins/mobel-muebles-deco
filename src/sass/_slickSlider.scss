@@ -1,0 +1,25 @@
+.slick-dots li.slick-active button:before {
+  color: $red;
+  font-size: 12px;
+}
+.slick-dots li button:before {
+  font-family: "slick";
+  font-size: 8px;
+  line-height: 0px;
+  color: rgb(83, 83, 83);
+}
+.slick-prev {
+  z-index: 1;
+  left: 10px;
+}
+.slick-next {
+  z-index: 1;
+  right: 22px;
+}
+.slick-prev:before,
+.slick-next:before {
+  font-size: 30px;
+  line-height: 1;
+  opacity: 0.85;
+  color: white;
+}

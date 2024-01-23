@@ -1,0 +1,172 @@
+@media (min-width: 320px) {
+  .homeCarouselContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    .homeCarousel {
+      width: 100vw;
+      margin: 0;
+      .slick-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .slick-prev {
+        z-index: 1;
+        left: 10px;
+      }
+      .slick-next {
+        z-index: 1;
+        right: 22px;
+      }
+      .slick-prev:before,
+      .slick-next:before {
+        font-size: 30px;
+        line-height: 1;
+        opacity: 0.85;
+        color: white;
+      }
+
+      .homeCarouselImg {
+        height: 28.12rem;
+        box-shadow: 0 -33px 25px -5px rgba(255, 255, 255, 1) inset;
+        -webkit-box-shadow: 0 -33px 25px -5px rgba(255, 255, 255, 1) inset;
+        -moz-box-shadow: 0 -33px 25px -5px rgba(255, 255, 255, 1) inset;
+        .homeCarouselCard {
+          width: 70vw;
+          padding: 1rem;
+          margin-top: 6.5rem;
+          margin-left: 15vw;
+          margin-right: 15vw;
+          background-color: rgba(255, 255, 255, 0.8);
+          border-radius: 10px;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          .homeCarouselCardTitle {
+            padding-bottom: 1rem;
+            font-size: 25px;
+            color: $darkGrey;
+          }
+          .homeCarouselCardText {
+            padding-bottom: 1rem;
+          }
+        }
+      }
+      .homeCarouselHome {
+        background-image: url("https://res.cloudinary.com/drez01kou/image/upload/v1703952641/mobel-deco/baners/rydaayveipjmi5jvpn3n.jpg");
+        background-position: center;
+        background-size: cover;
+      }
+      .homeCarouselMuebles {
+        background-image: url("https://res.cloudinary.com/drez01kou/image/upload/v1703952644/mobel-deco/baners/u8fy88bnxbsqbd5328hw.jpg");
+        background-position: center;
+        background-size: cover;
+      }
+      .homeCarouselDeco {
+        background-image: url("https://res.cloudinary.com/drez01kou/image/upload/v1703952650/mobel-deco/baners/ixfjkttvhreczdrmder1.jpg");
+        background-position: center;
+        background-size: cover;
+      }
+    }
+    .slick-dots {
+      position: relative;
+      z-index: 1;
+      bottom: 30px;
+    }
+  }
+}
+
+@media (min-width: 500px) {
+  .homeCarouselContainer {
+    .homeCarousel {
+      .homeCarouselImg {
+        height: 31.25rem;
+        .homeCarouselCard {
+          width: 60vw;
+          margin-top: 11rem;
+          margin-left: 20vw;
+          margin-right: 20vw;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .homeCarouselContainer {
+    .homeCarousel {
+      .slick-slide {
+        display: inline;
+      }
+      .slick-prev {
+        z-index: 1;
+        left: 20px;
+      }
+      .slick-next {
+        z-index: 1;
+        right: 42px;
+      }
+      .slick-prev:before,
+      .slick-next:before {
+        font-size: 40px;
+        line-height: 1;
+        opacity: 0.85;
+        color: white;
+      }
+      .homeCarouselImg {
+        .homeCarouselCard {
+          width: 20rem;
+          margin-top: 11rem;
+          margin-left: 5rem;
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .homeCarouselContainer {
+    .homeCarousel {
+      .slick-prev {
+        z-index: 1;
+        left: 30px;
+      }
+      .slick-next {
+        z-index: 1;
+        right: 55px;
+      }
+      .slick-prev:before,
+      .slick-next:before {
+        font-size: 45px;
+        line-height: 1;
+        opacity: 0.85;
+        color: white;
+      }
+      .homeCarouselImg {
+        height: 37.5rem;
+        .homeCarouselCard {
+          width: 30rem;
+          margin-top: 14.5rem;
+          margin-left: 8vw;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1400px) {
+  .homeCarouselContainer {
+    .homeCarousel {
+      .slick-prev {
+        z-index: 1;
+        left: 50px;
+      }
+      .slick-next {
+        z-index: 1;
+        right: 75px;
+      }
+    }
+  }
+}
